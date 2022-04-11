@@ -12,27 +12,32 @@
 </head>
 <body>
     <header>
-        <div class="header-logo">
+        <div class="header__logo">
             <a href="index.html"><img src="./img/logo.png" alt="logo"></a>
         </div>
-        <nav class="header-menu">
+        <label for="menu" class="header__burguerMenu">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+          <input type="checkbox" id="menu">
+          <nav class="header__menu">
+            <label for="menu" class="header__closeMenu">
+              <i class="fa-solid fa-circle-xmark"></i>
+            </label>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="Shop.html">Shop</a></li>
-                <li id="header-menu--item"><a href="productos.html">Productos</a></li>
-                <li><a href="contact.html">Contacto</a></li>
-                <li><a href="about.html">Conócenos</a></li>
-                
+                <li id="header__menu--itemGallery">
+                <a href="productos.html">Productos</a>
+                <ul>
+                  <li><a href="pages/remeras.html">Remeras</a></li>
+                  <li><a href="pages/buzos.html">Buzos</a></li>
+                <li><a href="pages/accesorios.html">Accesorios</a></li>
+                </ul>
+              </li>
+              <li><a href="Shop.html">Shop</a></li>
+              <li><a href="contact.html">Contacto</a></li>
+              <li><a href="about.html">Sobre nosotros</a></li>
             </ul>
-            <div class="social-bar">
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-            
-            
-            
-        </nav>
+          </nav>
     </header>
     <main>
         <section>

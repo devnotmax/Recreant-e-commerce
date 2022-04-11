@@ -15,30 +15,32 @@
 <section class="main">
     <!-- INICIO HEADER -->
     <header>
-        <div class="header-logo">
+        <div class="header__logo">
             <a href="index.html"><img src="./img/logo.png" alt="logo"></a>
         </div>
-        <button class="header__burguerMenu">
+        <label for="menu" class="header__burguerMenu">
             <i class="fa-solid fa-bars"></i>
-          </button>
-        <nav class="header-menu">
+          </label>
+          <input type="checkbox" id="menu">
+          <nav class="header__menu">
+            <label for="menu" class="header__closeMenu">
+              <i class="fa-solid fa-circle-xmark"></i>
+            </label>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="Shop.html">Shop</a></li>
-                <li id="header-menu--item"><a href="productos.html">Productos</a></li>
-                <li><a href="contact.html">Contacto</a></li>
-                <li><a href="about.html">Conócenos</a></li>
-                
+                <li id="header__menu--itemGallery">
+                <a href="productos.html">Productos</a>
+                <ul>
+                  <li><a href="pages/remeras.html">Remeras</a></li>
+                  <li><a href="pages/buzos.html">Buzos</a></li>
+                <li><a href="pages/accesorios.html">Accesorios</a></li>
+                </ul>
+              </li>
+              <li><a href="Shop.html">Shop</a></li>
+              <li><a href="contact.html">Contacto</a></li>
+              <li><a href="about.html">Sobre nosotros</a></li>
             </ul>
-            <div class="social-bar">
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-            
-            
-            
-        </nav>
+          </nav>
     </header>
     <!-- FIN HEADER -->
     <main>
@@ -61,31 +63,36 @@
     </main>
 </section>
 <section class="home-cards">
-    <div>
+    <div class="hc-1">
         <a href="#"><img src="./img/design 3.png" alt="remera2"></a>
         <span>T-SHIRT “BASIC LOGO”</span>
         <H5>$1950</H5>
     </div>
-    <div>
+    <div class="hc-2">
         <a href="#"><img src="./img/design 5.png" alt="remera3"></a>
         <span>T-SHIRT “BASIC LOGO”</span>
         <H5>$1950</H5>
     </div>
-    <div>
+    <div class="hc-3">
         <a href="#"><img src="./img/design 2.png" alt="remera4"></a>
         <span>T-SHIRT “NOT CATHEDRAL”</span>
         <h5>$1950</h5>
     </div>
 </section>
 <div class="ver-mas1">
-    <a href="#"><i class="fa-solid fa-angle-down"></i></a>
-    <img src="./img/circle.png" alt="circulo-decor">
+    <a href="Shop.html"><i class="fa-solid fa-angle-down"></i></a>
+    <div class="circle-decor"></div>
 </div>
 <footer>
     <div>
         <h4>
             © 2022 Recreantbrand. All rights reserved
         </h4>
+    </div>
+    <div class="social-media">
+        <a href="https://www.instagram.com/not_moreno/"target=”_blank”><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
     </div>
 </footer>
 
