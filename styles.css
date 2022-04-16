@@ -44,7 +44,7 @@ header {
   
   header .header__logo img {
     width: 100%;
-    margin-top: 4px;
+    margin-top: -1px;
   }
   
   header .header__burguerMenu {
@@ -498,7 +498,7 @@ footer {
     font-weight: 700;
     font-size: 20px;
     line-height: 45px;
-    top: 700px;
+    top: 740px;
 }
 .shop-cards img:hover {
     transform: translateY(-5px);
@@ -568,7 +568,8 @@ footer {
     width: 1440px;
     height: 720px;
     left: 0px;
-    top: 160px;
+    top: 260px;
+    padding: 40px;
 }
 .banner-1 h2 {
     position: absolute;
@@ -615,7 +616,7 @@ footer {
     width: 1440px;
     height: 720px;
     left: 0px;
-    top: 880px;
+    top: 980px;
 }
 .banner-2 h2{
     position: absolute;
