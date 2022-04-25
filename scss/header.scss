@@ -1,0 +1,96 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 0;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    z-index: 999; 
+    .header__logo {
+      height: 7rem;
+      width: 7rem;
+      justify-content: center;
+      align-items: center; 
+      img {
+        width: 100%;
+        margin-top: -1px; 
+      }
+    }
+    .header__burguerMenu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 2.5rem;
+      height: 2.5rem;
+      font-size: 2rem;
+      border: none;
+      color: black;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      border-radius: 5px;
+      cursor: pointer;
+      transition: box-shadow 0.5s ease-in; 
+  
+    }
+    input#menu {
+        display: none; 
+    }
+    button.header__burguerMenu:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    input#menu:checked ~ .header__menu {
+      display: block; }
+    .header__menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: white; 
+        .header__closeMenu {
+          position: absolute;
+          top: 1rem;
+          right: 1rem;
+          font-size: 1.5rem; }
+          ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%; 
+            li {
+              font-weight: 600;
+              border-radius: 5px;
+              padding: 0.5rem;
+              a {
+                text-decoration: none;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 20px;
+                color: #111827; 
+              }
+              a:hover {
+                  transform: translateY(-5px);
+                  box-shadow: 0px 10px 0px #C4B5FD;
+              }             
+            }
+          }
+    }
+    #header__menu--itemGallery ul {
+      flex-direction: column;
+      border-radius: 5px;
+      list-style: none; }
+    #header__menu--itemGallery ul li a {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        color: #111827;
+        text-decoration: none;
+   }
+  }

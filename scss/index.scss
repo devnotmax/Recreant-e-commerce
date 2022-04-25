@@ -1,0 +1,145 @@
+.hero-text {
+    h1{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 100px;
+      font-size: 38px;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      line-height: 60px;
+      text-align: center;
+      color: #111827;
+      letter-spacing: -0.025em;
+      font-feature-settings: 'liga' off;
+    }
+    span{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 32px;
+      color: #9CA3AF;
+    }
+  }
+  .hero-img{
+    float: right;
+    a{
+      img{
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding-left: 715px;
+      }
+    }
+  }
+  .hero-cart{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 96px 48px 0px 0px;
+    span{
+      display: flex;
+      position: absolute;
+      left: 82px;
+      top: 500px;
+      width: 648px;
+      height: 144px;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 55px;
+      line-height: 72px;
+      color: #111827;
+    }
+    h5{
+      position: absolute;
+      left: 82px;
+      top: 650px;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 28px;
+      color: #374151;
+    }
+    button{
+      position: absolute;
+      left: 82px;
+      top: 700px;
+      width: 152px;
+      height: 46px;
+      background: #C4B5FD;
+      border-radius: 8px;
+      a{
+        text-decoration: none;
+        text-align: center;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 24px;
+        color: #FFFFFF;
+      }
+    }
+    .btn-1:hover{
+      border: 2px solid #ff96ad;
+      color: #ff96ad;
+      background-color: #FDD9D9;
+      transform: translateY(-5px);
+  }
+  }
+
+/* Cards */
+.home-cards {
+  width: 95%;
+  margin: 9rem auto;
+  /* GRID */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+    img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+    img:hover {
+    transform: translateY(-5px);
+    box-shadow: 10px 10px 0px #C4B5FD;
+  }
+    span {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 45px;
+  }
+    h5{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 45px;
+  }
+}
+.ver-mas1 {
+    a {
+    position: absolute;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    right: 50%;
+    top: 2040px;
+    font-size: 60px;
+    text-decoration: none;
+    color: #111827;
+  }
+    a:hover {
+    transform: translateY(-5px);
+    box-shadow: 10px 10px 0px #C4B5FD;
+  }
+}
