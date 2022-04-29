@@ -1,0 +1,323 @@
+/* Articulos de compra inicio */
+
+
+.banner-sale{
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+.article-content {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 150px;
+}
+.article-box{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    border-radius: 0.4rem;
+
+    img{
+        width: 30rem;
+        height: 30rem;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 1rem;
+    }
+    img:hover{
+        transform: scale(1.05);
+        transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    h2{
+        display: flex;
+        justify-content: flex-start;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 90px;
+        color: #111827;
+        width: 100%;
+        height: 2rem;
+        top: 20px;
+    }
+    span{
+        display: flex;
+        justify-content: flex-start;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        color: #9CA3AF;
+        font-size: 14px;
+        line-height: 45px;
+        left: 200px;
+        width: 100%;
+        height: 1rem;
+    }
+    del{
+        display: flex;
+        justify-content: flex-start;
+        color: #9CA3AF;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 90px;
+        width: 100%;
+        height: 2rem;
+        top: 20px;
+    }
+    h5{
+        display: flex;
+        justify-content: flex-start;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 90px;
+        width: 100%;
+        height: 3rem;
+    }
+    h6{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        color: #9CA3AF;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 200;
+        font-size: 17px;
+        line-height: 16px;
+        width: 100%;
+        top: 20px;
+        height: 1rem;
+    }
+    h3{
+        color: #269751;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        margin-top: 14px;
+        font-size: 19px;
+        line-height: 16px;
+        width: 100%;
+        top: 20px;
+        height: 1rem;
+    }
+}
+
+@media screen and (max-width: 678px){
+    .article-content{
+        display: grid;
+        grid-template-columns: repeat(1,100%)
+    }
+    .btn-4 .button{
+        display: flex;
+    }
+    .article-box img{
+        padding: 5rem;
+        border-radius: 2rem;
+    }
+    .article-box h2{
+        font-size: 10px;
+    }
+    .article-box h5{
+        font-size: 26px;
+    }
+    .envios-text {
+        margin-left: 13rem;
+    }
+    .cp-form{
+        margin-left: 3rem;
+        p{
+            font-size: 5px;
+            color: #7C3AED;
+        }
+        .button-sbmit{
+            margin-top: 20px;
+        }
+    }
+}
+@media screen and (max-width: 1072px){
+    .article-box h2{
+        font-size: 30px;
+    }
+    .envios-text h4{
+        margin-left: 9rem;
+    }
+    .cp-form {
+        a{
+            margin-left: 4rem;
+        }
+        .calcularenvio{
+            margin-left: 2rem;
+        }
+    }
+}
+
+
+/* Medios de pago */
+
+.medios-pago{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+
+    a{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-decoration: none;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        
+    }
+    a:hover{
+        transition: 0.5s all linear;
+        color: blue;
+    }
+
+}
+
+/* Boton de compra */
+
+.medios-pago{
+    button{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 25px;
+        padding: 15px;
+        width: 152px;
+        height: 46px;
+        background: #C4B5FD;
+        border-radius: 1rem;
+    } 
+    button:hover{
+        transition: 0.5s all linear;
+        background: #EDE9FE;
+    }
+    a{
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #111827;
+    }
+    i{
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        color: #111827;
+    }
+}
+
+/* Envios */
+
+
+.envios-text{
+    margin-top: 70px;
+    position: relative;
+    display: flex;
+    right: 205px;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+
+    h4{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 16px;
+    }
+    i{
+        font-size: 20px;
+    }
+}
+.cp-form{
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    right: 50px;
+    border-radius: 20px;
+
+    p{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    input{
+        height: 2.5rem;
+        right: 100px;
+        outline: none;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 11px;
+        line-height: 28px;
+    }
+    button{
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+    }
+    .button-sbmit {
+        background-color: #FFFFFF;
+        color: #7C3AED;
+        border-radius: 1rem;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 16px;
+        margin-left: 10px;
+        height: 2rem;
+        width: 5rem;
+        transition: all .5s ease-in;
+    }
+    a{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-decoration: none;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+.talles img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* Fin articulos de compra */

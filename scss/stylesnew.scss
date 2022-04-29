@@ -33,6 +33,22 @@
  @import "footer.scss";
 /* Fin del footer */
 
+/* Shop */
+  @import "shop.scss";
+/* Fin shop */
+
+/* Productos */
+@import "productos.scss";
+/* Fin de productos */
+
+/* Contacto formulario */
+  @import "contactform.scss";
+/* Fin de contacto */
+
+/* Articulos de compra */
+@import "articles.scss";
+/* Fin de articulos de compra */
+
 /* Medias Queries */
 @media screen and (min-width: 768px) {
 
@@ -160,4 +176,53 @@ header .header__menu .header__closeMenu {
   footer{
       top: 2900px;
   }
+}
+/* mq de shop */
+@media screen and (max-width: 660px){
+  .shop-cards {
+      display: grid;
+      grid-template-columns: repeat(1,100%);
+  }
+  .shop-cards2{
+      display: grid;
+      grid-template-columns: repeat(1,100%);
+  }
+  .shop-cards2 h5{
+      display: none;
+  }
+  .shop-cards h5{
+      display: none;
+  }
+}
+
+/* Productos */
+@media screen and (max-width: 660px){
+  .banner-1{
+      display: none;
+  }
+  .banner-2{
+      display: none;
+  }
+  .banner-3{
+      display: flex;
+  }
+  .banner-3 img{
+      width: 100%;
+  }
+  .banner-3 img:hover{
+  transform: translateY(-5px);
+  box-shadow: 10px 10px 0px #4C1D95;
+ }
+ .banner-4{
+     display: flex;
+ }
+ .banner-4 img{
+  margin-top: 140px;   
+  width: 100%;
+ }
+ .banner-4 img:hover{
+  transform: translateY(-5px);
+  box-shadow: 10px 10px 0px #4C1D95; 
+ }
+  
 }

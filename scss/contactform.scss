@@ -1,0 +1,79 @@
+/* Inicio */
+
+.contact__mainContainer {
+    min-height: 90vh;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* GRID */
+    display: grid;
+    /* justify-content: center; */
+    align-items: center;
+    .contact__form {
+        /* GRID */
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        background-color: #F3F4F6;
+        border-radius: 20px;
+        padding: 100px;
+        h2 {
+            text-align: center;
+            margin-bottom: 1rem;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 60px;
+        }
+        input {
+            height: 2.5rem;
+            padding: 1rem;
+            outline: none;
+            margin-bottom: 1rem;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 28px;
+            border-radius: 20px;
+        
+        }
+        textarea {
+            padding: 1rem;
+            resize: none;
+            margin-bottom: 1rem;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 28px;
+            border-radius: 20px;
+        }
+        .contact__form--buttonsContainer {
+            /* display: flex;
+            justify-content: space-around; */
+            /* GRID */
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            justify-items: center;
+            button {
+                border: none;
+                height: 1rem;
+                padding: 0.5rem 1rem;
+                border-radius: 5px;
+            }
+            button[type = "submit"] {
+                background-color: #FFFFFF;
+                color: #7C3AED;
+                transition: all .5s ease-in;
+            }
+            button[type = "submit"]:hover {
+                background-color: white;
+                color: rgb(70, 70, 70);
+                border: 1px solid rgb(75, 75, 75);
+                cursor: pointer;
+        }
+    }
+}
+}

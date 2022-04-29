@@ -1,0 +1,72 @@
+/* Cartas de shop */
+
+.shop-cards {
+
+    width: 95%;
+    margin: 9rem auto;
+    /* GRID */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    img:hover {
+        transform: translateY(-5px);
+        box-shadow: 10px 10px 0px #C4B5FD;
+    }
+    span {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 45px;
+    }
+    h5{
+        position: absolute;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 45px;
+        top: 740px;
+    }
+}
+.shop-cards2 {
+    margin-top: 100px;
+    width: 95%;
+    margin: 9rem auto;
+    /* GRID */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+
+    img{
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    img:hover {
+        transform: translateY(-5px);
+        box-shadow: 10px 10px 0px #C4B5FD;
+    }
+    span {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 45px;
+    }
+    h5{
+        position: absolute;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 45px;
+        top: 1350px;
+    }
+}
