@@ -1,0 +1,31 @@
+.lista-sucursales{
+    img{
+        width: 2rem;
+    }
+    h1{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        line-height: 60px;
+        font-size: 35px;
+    }
+    p{
+        margin: .5rem;
+    }
+}
+details{
+    margin: .5rem;
+    margin-top: 4rem;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    p{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        margin: .5rem; 
+        margin-top: 5;
+    }
+}

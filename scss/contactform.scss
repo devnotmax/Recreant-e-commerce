@@ -1,7 +1,7 @@
 /* Inicio */
 
 .contact__mainContainer {
-    min-height: 90vh;
+    min-height: 50vh;
     /* display: flex;
     justify-content: center;
     align-items: center; */
@@ -14,9 +14,7 @@
         display: grid;
         justify-content: center;
         align-items: center;
-        background-color: #F3F4F6;
-        border-radius: 20px;
-        padding: 100px;
+        border-radius: 1rem;
         h2 {
             text-align: center;
             margin-bottom: 1rem;
@@ -28,27 +26,35 @@
         }
         input {
             height: 2.5rem;
-            padding: 1rem;
+            padding: 2rem;
             outline: none;
             margin-bottom: 1rem;
+            margin-left: 1rem;
+            margin-right: 1rem;
             font-family: 'Inter';
             font-style: normal;
             font-weight: 700;
             font-size: 14px;
             line-height: 28px;
-            border-radius: 20px;
+            border: none;
+            border-radius: 12px;
+            background-color: #F3F4F6;
         
         }
         textarea {
             padding: 1rem;
             resize: none;
             margin-bottom: 1rem;
+            margin-left: 1rem;
+            margin-right: 1rem;
             font-family: 'Inter';
             font-style: normal;
             font-weight: 700;
             font-size: 14px;
             line-height: 28px;
-            border-radius: 20px;
+            border: none;
+            border-radius: 12px;
+            background-color: #F3F4F6;
         }
         .contact__form--buttonsContainer {
             /* display: flex;
@@ -59,14 +65,18 @@
             justify-items: center;
             button {
                 border: none;
-                height: 1rem;
+                height: 2rem;
                 padding: 0.5rem 1rem;
                 border-radius: 5px;
+                margin-bottom: 1rem;
             }
             button[type = "submit"] {
                 background-color: #FFFFFF;
                 color: #7C3AED;
                 transition: all .5s ease-in;
+                font-size: 13px;
+                justify-content: center;
+                align-items: center;
             }
             button[type = "submit"]:hover {
                 background-color: white;
@@ -76,4 +86,27 @@
         }
     }
 }
+}
+
+.contact-socialmedia{
+    margin-top: 100px;
+    h2{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 55px;
+        line-height: 72px;
+        color: #111827;
+    }
+    ul{
+        list-style: none;
+        li{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 72px;
+            color: #111827; 
+        }
+    }
 }

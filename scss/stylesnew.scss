@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700&family=Lato:ital,wght@1,700;1,900&family=Readex+Pro:wght@300;400&display=swap');
 
-*body{
+body{
     overflow-x: hidden;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
  }
 * {
   margin: 0;
@@ -48,6 +51,10 @@
 /* Articulos de compra */
 @import "articles.scss";
 /* Fin de articulos de compra */
+
+/* Acerca de nosotros */
+@import "about.scss";
+/*  */
 
 /* Medias Queries */
 @media screen and (min-width: 768px) {
@@ -115,7 +122,8 @@ header #header__menu--itemGallery ul li{
 header .header__menu .header__closeMenu {
   justify-content: flex-start;
   align-items: flex-start;
-  margin-right: 400px;
+  margin-right: 4px;
+  margin-top: 10px;
 }
 }
 @media screen and (min-width: 320px){
@@ -124,7 +132,13 @@ header .header__menu .header__closeMenu {
   }
   .hero-text h1{
       margin-bottom: 10px;
+      
   }
+  .lista-sucursales{
+    img{
+        width: 100%;
+    }
+}
 }
 @media screen and (max-width: 660px){
   .hero-img img{
@@ -134,12 +148,17 @@ header .header__menu .header__closeMenu {
   }
   .hero-cart span{
   position: absolute;
-  width: 75%;
+  width: 100%;
   height: 98px;
   left: 0px;
-  top: 900px;
-  font-size: 35px;
+  top: 390px;
+  font-size: 25px;
   line-height: 40px;
+  color: #9CA3AF;
+  text-align: center;
+  justify-content: center;
+  padding: 20px;
+
   }
   .hero-cart h5{
       display: none;
@@ -165,16 +184,38 @@ header .header__menu .header__closeMenu {
   .home-cards {
       display: grid;
       grid-template-columns: repeat(1,100%);
+      gap: 20px;
   }
-  .ver-mas1 a {
-      top: 2700px;
-      left: 125px;
+  .home-cards span{
+    font-size: 20px;
+  }
+  .ver-mas1{
+    cursor: pointer;
+    top: 2000px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
+  .lista-sucursales{
+    img{
+        width: 100%;
+    }
   }
 
 }
+
 @media screen and (max-width: 660px){
   footer{
-      top: 2900px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  .footer-shop{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-top: 500px;
   }
 }
 /* mq de shop */
@@ -189,14 +230,19 @@ header .header__menu .header__closeMenu {
   }
   .shop-cards2 h5{
       display: none;
+      margin-bottom: 200px;
   }
   .shop-cards h5{
       display: none;
+      margin-bottom: 200px;
   }
 }
 
 /* Productos */
 @media screen and (max-width: 660px){
+  .banners-prod{
+    margin-bottom: 0%;
+  }
   .banner-1{
       display: none;
   }
@@ -207,7 +253,8 @@ header .header__menu .header__closeMenu {
       display: flex;
   }
   .banner-3 img{
-      width: 100%;
+    margin-top: 150px;  
+    width: 100%;
   }
   .banner-3 img:hover{
   transform: translateY(-5px);
@@ -217,12 +264,38 @@ header .header__menu .header__closeMenu {
      display: flex;
  }
  .banner-4 img{
-  margin-top: 140px;   
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  margin-top: 300px;   
   width: 100%;
  }
  .banner-4 img:hover{
   transform: translateY(-5px);
   box-shadow: 10px 10px 0px #4C1D95; 
  }
+  .banner-sale2{
+    display: flex;
+    img {
+      margin-top: 1000px;
+      padding: 0;
+    }
+  }
   
+}
+
+/* contact */
+@media screen and (min-width: 320px){
+  .contact__form{
+    input{
+      border: none;
+      border-radius: 12px;
+      background-color: white;
+    }
+    textarea{
+      border: none;
+      border-radius: 12px;
+      background-color: white;
+    }
+  }
 }

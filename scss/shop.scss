@@ -1,4 +1,7 @@
 /* Cartas de shop */
+main{
+    min-height: 100vh;
+}
 
 .shop-cards {
 
@@ -68,5 +71,12 @@
         font-size: 20px;
         line-height: 45px;
         top: 1350px;
+    }
+}
+.shop-banner1{
+    img{
+        width: 100%;
+        padding: 20px;
+        margin-bottom: 40px;
     }
 }
